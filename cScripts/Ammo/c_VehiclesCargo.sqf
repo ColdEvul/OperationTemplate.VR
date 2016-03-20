@@ -2,7 +2,7 @@
 
 if (! isServer) exitWith {};
 
-    params ["_vehicle"];
+    params ["_vehicle","_quaScale"];
     _vehicleType = typeOf _vehicle;
     
     #include "..\Loadouts\defines.h";
@@ -30,7 +30,7 @@ if (! isServer) exitWith {};
         "rhsusf_m998_w_4dr",
         "rhsusf_rg33_wd",
         "rhsusf_rg33_m2_wd"
-     ];
+    ];
     private _vehicleCargoTRUCK  = [
         "rhsusf_M1078A1P2_d_fmtv_usarmy",
         "rhsusf_M1078A1P2_d_flatbed_fmtv_usarmy",
@@ -71,7 +71,7 @@ if (! isServer) exitWith {};
         "rhsusf_M1083A1P2_B_wd_open_fmtv_usarmy",
         
         "rhsusf_M1083A1P2_B_M2_d_MHQ_fmtv_usarmy"
-     ];
+    ];
     private _vehicleCargoARMOR = [
         "rhsusf_m1a1aim_tuski_d",
         "rhsusf_m1a1aim_tuski_wd",
@@ -209,136 +209,136 @@ if (! isServer) exitWith {};
     
     switch (true) do {
         case (_vehicleType in _vehicleCargoHUMVEE): {
-            _vehicle addMagazineCargoGlobal [QUOTE(_MAG_PRIMARY),15];
+            _vehicle addMagazineCargoGlobal [QUOTE(_MAG_PRIMARY),(_quaScale * 15)];
             
-            _vehicle addMagazineCargoGlobal [QUOTE(_GRENADE_SMOKE),2];
-            _vehicle addMagazineCargoGlobal [QUOTE(_GRENADE_SMOKE_BLUE),1];
+            _vehicle addMagazineCargoGlobal [QUOTE(_GRENADE_SMOKE),(_quaScale * 2)];
+            _vehicle addMagazineCargoGlobal [QUOTE(_GRENADE_SMOKE_BLUE),(_quaScale * 1)];
             
-            _vehicle addMagazineCargoGlobal [QUOTE(_CHEMLIGHT_BLUE),10];
-            _vehicle addMagazineCargoGlobal [QUOTE(_CHEMLIGHT_RED),10];
+            _vehicle addMagazineCargoGlobal [QUOTE(_CHEMLIGHT_BLUE),(_quaScale * 10)];
+            _vehicle addMagazineCargoGlobal [QUOTE(_CHEMLIGHT_RED),(_quaScale * 10)];
             
-            _vehicle addItemCargoGlobal [QUOTE(_ITEM_EARPLUGS),3];
-            _vehicle addItemCargoGlobal [QUOTE(_MED_FIELDDRESSING),6];
+            _vehicle addItemCargoGlobal [QUOTE(_ITEM_EARPLUGS),(_quaScale * 3)];
+            _vehicle addItemCargoGlobal [QUOTE(_MED_FIELDDRESSING),(_quaScale * 6)];
             
-            _vehicle addItemCargoGlobal [QUOTE(_ITEM_TOOLKIT),1];
+            _vehicle addItemCargoGlobal [QUOTE(_ITEM_TOOLKIT),(_quaScale * 1)];
             
             _vehicle setVariable ["TF_RadioType", "tf_rt1523g", true]; //Temp bugfix for missing radio
         };
         case (_vehicleType in _vehicleCargoTRUCK): {
-            _vehicle addMagazineCargoGlobal [QUOTE(_MAG_PRIMARY),15];
-            _vehicle addMagazineCargoGlobal [QUOTE(_MAG_AR1),4];
+            _vehicle addMagazineCargoGlobal [QUOTE(_MAG_PRIMARY),(_quaScale * 15)];
+            _vehicle addMagazineCargoGlobal [QUOTE(_MAG_AR1),(_quaScale * 4)];
             
-            _vehicle addMagazineCargoGlobal [QUOTE(_GRENADE_SMOKE),2];
-            _vehicle addMagazineCargoGlobal [QUOTE(_GRENADE_SMOKE_BLUE),1];
+            _vehicle addMagazineCargoGlobal [QUOTE(_GRENADE_SMOKE),(_quaScale * 2)];
+            _vehicle addMagazineCargoGlobal [QUOTE(_GRENADE_SMOKE_BLUE),(_quaScale * 1)];
             
-            _vehicle addMagazineCargoGlobal [QUOTE(_CHEMLIGHT_BLUE),10];
-            _vehicle addMagazineCargoGlobal [QUOTE(_CHEMLIGHT_RED),10];
+            _vehicle addMagazineCargoGlobal [QUOTE(_CHEMLIGHT_BLUE),(_quaScale * 10)];
+            _vehicle addMagazineCargoGlobal [QUOTE(_CHEMLIGHT_RED),(_quaScale * 10)];
             
-            _vehicle addItemCargoGlobal [QUOTE(_ITEM_EARPLUGS),3];
-            _vehicle addItemCargoGlobal [QUOTE(_MED_FIELDDRESSING),6];
+            _vehicle addItemCargoGlobal [QUOTE(_ITEM_EARPLUGS),(_quaScale * 3)];
+            _vehicle addItemCargoGlobal [QUOTE(_MED_FIELDDRESSING),(_quaScale * 6)];
             
-            _vehicle addItemCargoGlobal [QUOTE(_ITEM_TOOLKIT),1];
+            _vehicle addItemCargoGlobal [QUOTE(_ITEM_TOOLKIT),(_quaScale * 1)];
             
             _vehicle setVariable ["TF_RadioType", "tf_rt1523g", true]; //Temp bugfix for missing radio
         };
         case (_vehicleType in _vehicleCargoARMOR) : {
-            _vehicle addMagazineCargoGlobal [QUOTE(_MAG_AR1),2];
-            _vehicle addWeaponCargoGlobal [QUOTE(_WEAPON_PRIMARY_AR1),1];
+            _vehicle addMagazineCargoGlobal [QUOTE(_MAG_AR1),(_quaScale * 2)];
+            _vehicle addWeaponCargoGlobal [QUOTE(_WEAPON_PRIMARY_AR1),(_quaScale * 1)];
             
-            _vehicle addMagazineCargoGlobal [QUOTE(_GRENADE_SMOKE),2];
-            _vehicle addMagazineCargoGlobal [QUOTE(_GRENADE_SMOKE_BLUE),1];
+            _vehicle addMagazineCargoGlobal [QUOTE(_GRENADE_SMOKE),(_quaScale * 2)];
+            _vehicle addMagazineCargoGlobal [QUOTE(_GRENADE_SMOKE_BLUE),(_quaScale * 1)];
             
-            _vehicle addMagazineCargoGlobal [QUOTE(_CHEMLIGHT_BLUE),10];
-            _vehicle addMagazineCargoGlobal [QUOTE(_CHEMLIGHT_RED),10];
+            _vehicle addMagazineCargoGlobal [QUOTE(_CHEMLIGHT_BLUE),(_quaScale * 10)];
+            _vehicle addMagazineCargoGlobal [QUOTE(_CHEMLIGHT_RED),(_quaScale * 10)];
             
-            _vehicle addItemCargoGlobal [QUOTE(_ITEM_TOOLKIT),1];
+            _vehicle addItemCargoGlobal [QUOTE(_ITEM_TOOLKIT),(_quaScale * 1)];
         };
         case (_vehicleType in _vehicleCargoIFV) : {
-            _vehicle addMagazineCargoGlobal [QUOTE(_MAG_PRIMARY),15];
-            _vehicle addMagazineCargoGlobal [QUOTE(_MAG_AR1),4];
+            _vehicle addMagazineCargoGlobal [QUOTE(_MAG_PRIMARY),(_quaScale * 15)];
+            _vehicle addMagazineCargoGlobal [QUOTE(_MAG_AR1),(_quaScale * 4)];
             
-            _vehicle addMagazineCargoGlobal [QUOTE(_GRENADE_SMOKE),2];
-            _vehicle addMagazineCargoGlobal [QUOTE(_GRENADE_SMOKE_BLUE),1];
+            _vehicle addMagazineCargoGlobal [QUOTE(_GRENADE_SMOKE),(_quaScale * 2)];
+            _vehicle addMagazineCargoGlobal [QUOTE(_GRENADE_SMOKE_BLUE),(_quaScale * 1)];
             
-            _vehicle addMagazineCargoGlobal [QUOTE(_CHEMLIGHT_BLUE),10];
-            _vehicle addMagazineCargoGlobal [QUOTE(_CHEMLIGHT_RED),10];
+            _vehicle addMagazineCargoGlobal [QUOTE(_CHEMLIGHT_BLUE),(_quaScale * 10)];
+            _vehicle addMagazineCargoGlobal [QUOTE(_CHEMLIGHT_RED),(_quaScale * 10)];
             
-            _vehicle addItemCargoGlobal [QUOTE(_ITEM_EARPLUGS),3];
-            _vehicle addItemCargoGlobal [QUOTE(_MED_FIELDDRESSING),6];
+            _vehicle addItemCargoGlobal [QUOTE(_ITEM_EARPLUGS),(_quaScale * 3)];
+            _vehicle addItemCargoGlobal [QUOTE(_MED_FIELDDRESSING),(_quaScale * 6)];
             
-            _vehicle addItemCargoGlobal [QUOTE(_ITEM_TOOLKIT),1];
+            _vehicle addItemCargoGlobal [QUOTE(_ITEM_TOOLKIT),(_quaScale * 1)];
             
             _vehicle setVariable ["TF_RadioType", "tf_rt1523g", true]; //Temp bugfix for missing radio
         };
         case (_vehicleType in _vehicleCargoMED) : {
-            _vehicle addItemCargoGlobal [QUOTE(_ITEM_EARPLUGS),15];
+            _vehicle addItemCargoGlobal [QUOTE(_ITEM_EARPLUGS),(_quaScale * 15)];
             
-            _vehicle addItemCargoGlobal [QUOTE(_MED_FIELDDRESSING),30];
+            _vehicle addItemCargoGlobal [QUOTE(_MED_FIELDDRESSING),(_quaScale * 30)];
             
-            _vehicle addItemCargoGlobal [QUOTE(_MED_IV0),10];
-            _vehicle addItemCargoGlobal [QUOTE(_MED_IV1),10];
-            _vehicle addItemCargoGlobal [QUOTE(_MED_IV2),10];
+            _vehicle addItemCargoGlobal [QUOTE(_MED_IV0),(_quaScale * 10)];
+            _vehicle addItemCargoGlobal [QUOTE(_MED_IV1),(_quaScale * 10)];
+            _vehicle addItemCargoGlobal [QUOTE(_MED_IV2),(_quaScale * 10)];
             
-            _vehicle addItemCargoGlobal [QUOTE(_MED_MORPHINE),30];
-            _vehicle addItemCargoGlobal [QUOTE(_MED_EPINEPHRINE),20];
-            _vehicle addItemCargoGlobal [QUOTE(_MED_ATROPINE),20];
+            _vehicle addItemCargoGlobal [QUOTE(_MED_MORPHINE),(_quaScale * 30)];
+            _vehicle addItemCargoGlobal [QUOTE(_MED_EPINEPHRINE),(_quaScale * 20)];
+            _vehicle addItemCargoGlobal [QUOTE(_MED_ATROPINE),(_quaScale * 20)];
 
-            _vehicle addItemCargoGlobal [QUOTE(_MED_TOURNIQUET),10];
-            _vehicle addItemCargoGlobal [QUOTE(_MED_ELASTICBANDAGE),40];
-            _vehicle addItemCargoGlobal [QUOTE(_MED_PACKINGBANDAGE),40];
-            _vehicle addItemCargoGlobal [QUOTE(_MED_QUIKCLOT),60];
+            _vehicle addItemCargoGlobal [QUOTE(_MED_TOURNIQUET),(_quaScale * 10)];
+            _vehicle addItemCargoGlobal [QUOTE(_MED_ELASTICBANDAGE),(_quaScale * 40)];
+            _vehicle addItemCargoGlobal [QUOTE(_MED_PACKINGBANDAGE),(_quaScale * 40)];
+            _vehicle addItemCargoGlobal [QUOTE(_MED_QUIKCLOT),(_quaScale * 60)];
             
-            _vehicle addItemCargoGlobal [QUOTE(_ITEM_BODYBAG0),12];
+            _vehicle addItemCargoGlobal [QUOTE(_ITEM_BODYBAG0),(_quaScale * 12)];
             
-            _vehicle addMagazineCargoGlobal [QUOTE(_GRENADE_SMOKE),2];
-            _vehicle addMagazineCargoGlobal [QUOTE(_GRENADE_SMOKE_BLUE),1];
+            _vehicle addMagazineCargoGlobal [QUOTE(_GRENADE_SMOKE),(_quaScale * 2)];
+            _vehicle addMagazineCargoGlobal [QUOTE(_GRENADE_SMOKE_BLUE),(_quaScale * 1)];
             
-            _vehicle addMagazineCargoGlobal [QUOTE(_CHEMLIGHT_BLUE),10];
-            _vehicle addMagazineCargoGlobal [QUOTE(_CHEMLIGHT_RED),10];
+            _vehicle addMagazineCargoGlobal [QUOTE(_CHEMLIGHT_BLUE),(_quaScale * 10)];
+            _vehicle addMagazineCargoGlobal [QUOTE(_CHEMLIGHT_RED),(_quaScale * 10)];
             
-            _vehicle addItemCargoGlobal [QUOTE(_ITEM_TOOLKIT),1];
+            _vehicle addItemCargoGlobal [QUOTE(_ITEM_TOOLKIT),(_quaScale * 1)];
             
             _vehicle setVariable ["TF_RadioType", "tf_rt1523g", true]; //Temp bugfix for missing radio
         };
         case (_vehicleType in _vehicleCargoTransportAviation) : {
-            _vehicle addMagazineCargoGlobal [QUOTE(_MAG_PRIMARY),15];
+            _vehicle addMagazineCargoGlobal [QUOTE(_MAG_PRIMARY),(_quaScale * 15)];
             
-            _vehicle addMagazineCargoGlobal [QUOTE(_GRENADE_SMOKE),2];
-            _vehicle addMagazineCargoGlobal [QUOTE(_GRENADE_SMOKE_BLUE),1];
+            _vehicle addMagazineCargoGlobal [QUOTE(_GRENADE_SMOKE),(_quaScale * 2)];
+            _vehicle addMagazineCargoGlobal [QUOTE(_GRENADE_SMOKE_BLUE),(_quaScale * 1)];
             
-            _vehicle addMagazineCargoGlobal [QUOTE(_CHEMLIGHT_BLUE),10];
-            _vehicle addMagazineCargoGlobal [QUOTE(_CHEMLIGHT_RED),10];
+            _vehicle addMagazineCargoGlobal [QUOTE(_CHEMLIGHT_BLUE),(_quaScale * 10)];
+            _vehicle addMagazineCargoGlobal [QUOTE(_CHEMLIGHT_RED),(_quaScale * 10)];
             
-            _vehicle addItemCargoGlobal [QUOTE(_ITEM_TOOLKIT),1];
+            _vehicle addItemCargoGlobal [QUOTE(_ITEM_TOOLKIT),(_quaScale * 1)];
         };
         case (_vehicleType in _vehicleCargoAttackAviation) : {
         };
         case (_vehicleType in _vehicleCargoMedicalAviation) : {
-            _vehicle addItemCargoGlobal [QUOTE(_ITEM_EARPLUGS),15];
+            _vehicle addItemCargoGlobal [QUOTE(_ITEM_EARPLUGS),(_quaScale * 15)];
             
-            _vehicle addItemCargoGlobal [QUOTE(_MED_FIELDDRESSING),30];
+            _vehicle addItemCargoGlobal [QUOTE(_MED_FIELDDRESSING),(_quaScale * 30)];
             
-            _vehicle addItemCargoGlobal [QUOTE(_MED_IV0),10];
-            _vehicle addItemCargoGlobal [QUOTE(_MED_IV1),10];
-            _vehicle addItemCargoGlobal [QUOTE(_MED_IV2),10];
+            _vehicle addItemCargoGlobal [QUOTE(_MED_IV0),(_quaScale * 10)];
+            _vehicle addItemCargoGlobal [QUOTE(_MED_IV1),(_quaScale * 10)];
+            _vehicle addItemCargoGlobal [QUOTE(_MED_IV2),(_quaScale * 10)];
             
-            _vehicle addItemCargoGlobal [QUOTE(_MED_MORPHINE),30];
-            _vehicle addItemCargoGlobal [QUOTE(_MED_EPINEPHRINE),20];
-            _vehicle addItemCargoGlobal [QUOTE(_MED_ATROPINE),20];
+            _vehicle addItemCargoGlobal [QUOTE(_MED_MORPHINE),(_quaScale * 30)];
+            _vehicle addItemCargoGlobal [QUOTE(_MED_EPINEPHRINE),(_quaScale * 20)];
+            _vehicle addItemCargoGlobal [QUOTE(_MED_ATROPINE),(_quaScale * 20)];
 
-            _vehicle addItemCargoGlobal [QUOTE(_MED_TOURNIQUET),10];
-            _vehicle addItemCargoGlobal [QUOTE(_MED_ELASTICBANDAGE),40];
-            _vehicle addItemCargoGlobal [QUOTE(_MED_PACKINGBANDAGE),40];
-            _vehicle addItemCargoGlobal [QUOTE(_MED_QUIKCLOT),60];
+            _vehicle addItemCargoGlobal [QUOTE(_MED_TOURNIQUET),(_quaScale * 10)];
+            _vehicle addItemCargoGlobal [QUOTE(_MED_ELASTICBANDAGE),(_quaScale * 40)];
+            _vehicle addItemCargoGlobal [QUOTE(_MED_PACKINGBANDAGE),(_quaScale * 40)];
+            _vehicle addItemCargoGlobal [QUOTE(_MED_QUIKCLOT),(_quaScale * 60)];
             
-            _vehicle addItemCargoGlobal [QUOTE(_ITEM_BODYBAG0),12];
+            _vehicle addItemCargoGlobal [QUOTE(_ITEM_BODYBAG0),(_quaScale * 12)];
             
-            _vehicle addMagazineCargoGlobal [QUOTE(_GRENADE_SMOKE),2];
-            _vehicle addMagazineCargoGlobal [QUOTE(_GRENADE_SMOKE_BLUE),1];
+            _vehicle addMagazineCargoGlobal [QUOTE(_GRENADE_SMOKE),(_quaScale * 2)];
+            _vehicle addMagazineCargoGlobal [QUOTE(_GRENADE_SMOKE_BLUE),(_quaScale * 1)];
             
-            _vehicle addMagazineCargoGlobal [QUOTE(_CHEMLIGHT_BLUE),10];
-            _vehicle addMagazineCargoGlobal [QUOTE(_CHEMLIGHT_RED),10];
+            _vehicle addMagazineCargoGlobal [QUOTE(_CHEMLIGHT_BLUE),(_quaScale * 10)];
+            _vehicle addMagazineCargoGlobal [QUOTE(_CHEMLIGHT_RED),(_quaScale * 10)];
             
-            _vehicle addItemCargoGlobal [QUOTE(_ITEM_TOOLKIT),1];
+            _vehicle addItemCargoGlobal [QUOTE(_ITEM_TOOLKIT),(_quaScale * 1)];
         };
     };
