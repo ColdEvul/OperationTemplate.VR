@@ -29,6 +29,7 @@
     #include "cScripts\ViewingDistance\GUI.h"
     class CfgFunctions {
         #include "cScripts\ViewingDistance\CfgFunctions.hpp"
+        #include "cScripts\Ammo\CfgFunctions.hpp"
         #include "cScripts\Loadouts\GearUpScript\CfgFunctions.hpp" 
     };
     #include "cScripts\Loadouts\gearLoad.hpp"
