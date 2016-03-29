@@ -1,6 +1,11 @@
 class CAV {
     class Crates {
         postInit = 1;
+        // [this] call CAV_fnc_Arsenal;
+        class Arsenal {
+            tag = "CAV";
+            file = "cScripts\Ammo\c_Arsenal.sqf";
+        };
         // [this,1] call CAV_fnc_BaseCrate;
         class BaseCrate {
             tag = "CAV";
