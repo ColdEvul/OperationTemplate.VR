@@ -1,10 +1,10 @@
-if (! isServer), exitWith {};
+if (! isServer) exitWith {};
 
 #include "..\Loadouts\defines.h";
 
 params ["_object"];
 
-private _value  = [
+private _weapons  = [
 //================== WEAPONS ==================\\
     QUOTE(_WEAPON_PRIMARY0),
     QUOTE(_WEAPON_PRIMARY_GL0),
@@ -13,10 +13,10 @@ private _value  = [
     QUOTE(_WEAPON_LAUNCHER0),
     QUOTE(_WEAPON_LAUNCHER1),
     QUOTE(_WEAPON_LAUNCHER2),
-    QUOTE(_WEAPON_LAUNCHER3),
-
+    QUOTE(_WEAPON_LAUNCHER3)
+];
+private _magazine  = [
 //================== AMMO ==================\\
-
     QUOTE(_MAG_PRIMARY),
     QUOTE(_MAG_PRIMARY_TRACER),
     QUOTE(_MAG_AR0),
@@ -59,10 +59,10 @@ private _value  = [
     QUOTE(_MAG_MINE0),
     QUOTE(_MAG_MINE1),
     QUOTE(_MAG_MINE2),
-    QUOTE(_MAG_MINE3),
-
+    QUOTE(_MAG_MINE3)
+];
+private _Item  = [
 //================== ITEMS ==================\\
-
     QUOTE(_ITEM_NIGHTVISION),
     QUOTE(_ITEM_TOOLKIT),
     QUOTE(_ITEM_DETONATOR),
@@ -78,7 +78,6 @@ private _value  = [
     QUOTE(_ITEM_RADIO1),
 
 //================== MEDICAL ==================\\
-
     QUOTE(_ITEM_EARPLUGS),
     QUOTE(_MED_FIELDDRESSING),
     QUOTE(_MED_PACKINGBANDAGE),
@@ -93,12 +92,15 @@ private _value  = [
     QUOTE(_MED_MORPHINE),
     QUOTE(_MED_EPINEPHRINE),
     QUOTE(_MED_ATROPINE),
-    QUOTE(_ITEM_BODYBAG0),
-
+    QUOTE(_ITEM_BODYBAG0)
+];
 //================== BACKPACKS ==================\\
-
+private _backpack  = [
     QUOTE(_GEAR_BACKPACK0),
     QUOTE(_GEAR_BACKPACK_RADIO0)
 ];
 
-[_object,_value] call bis_fnc_initAmmoBox;
+["_object",_backpack,(true)] call BIS_fnc_addVirtualBackpackCargo;
+["_object",_Item,(true)] call BIS_fnc_addVirtualItemCargo;
+["_object",_magazine,(true)] call BIS_fnc_addVirtualMagazineCargo;
+["_object",_weapon,(true)] call BIS_fnc_addVirtualWeaponCargo;
