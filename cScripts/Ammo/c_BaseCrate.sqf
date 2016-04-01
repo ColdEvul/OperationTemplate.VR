@@ -2,7 +2,7 @@ if (! isServer) exitWith {};
 
 #include "..\Loadouts\defines.h";
 
-params ["_crate","_quaScale"];
+params ["_crate",["_quaScale",1]];
 
 clearweaponcargoGlobal _crate;
 clearmagazinecargoGlobal _crate;

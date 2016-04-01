@@ -140,7 +140,7 @@ class C_AT {               // "AT"        | ANTI-TANK JAV
         _WEAPON_ATTACHMENT_SCOPE0
     };
     
-    secondaryWeapon = _WEAPON_LAUNCHER1;
+    secondaryWeapon = _WEAPON_LAUNCHER0;
     handgunWeapon = "";
     
     items[] = {};

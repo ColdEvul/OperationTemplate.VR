@@ -1,6 +1,6 @@
 if (! isServer) exitWith {};
 
-    params ["_vehicle","_quaScale"];
+    params ["_vehicle",["_quaScale",1]];
     _vehicleType = typeOf _vehicle;
     
     #include "..\Loadouts\defines.h";
