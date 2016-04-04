@@ -39,6 +39,7 @@
     #include "cScripts\ViewingDistance\GUI.h"
     class CfgFunctions {
         #include "cScripts\ViewingDistance\CfgFunctions.hpp"
+        #include "cScripts\Scripts\CfgFunctions.hpp"
         #include "cScripts\Ammo\CfgFunctions.hpp"
         #include "cScripts\Loadouts\GearUpScript\CfgFunctions.hpp"  // Regear a unit with its starting equipment user this: this addAction ["<t color=""#ffcc33"">ReGear</t>","[] call A3G_Loadout_fnc_ApplyLoadout;"];
     };
