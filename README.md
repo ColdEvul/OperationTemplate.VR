@@ -14,20 +14,24 @@ Used functions
 ##### CAV_fnc_BaseCrate
 This fuction adds a Base Crate containing a humungus ammount of resourses. You can scale the ammount by changing the second parameter between `0 to 1` (You can go over 1 but its not recomended.)
 ###### Exsample
-```[this,1] call CAV_fnc_BaseCrate;```
+```
+[this,1] call CAV_fnc_BaseCrate;```
 
 ##### CAV_fnc_BaseMedCrate
 This fuction adds a medical Base Crate containing a humungus ammount of medical equipment. You can scale the ammount by changing the second parameter between `0 to 1` (You can go over 1 but its not recomended.)
 ###### Exsample
-```[this,1] call CAV_fnc_BaseMedCrate;```
+```c++
+[this,1] call CAV_fnc_BaseMedCrate;```
 
 ##### CAV_fnc_SupplyCrate
 This function adds a resuply crate for resupplying a platoon size unit. You can scale the ammount by changing the second parameter between `0 to 1` (You can go over 1 but its not recomended.)
 ###### Exsample
-```[this,1] call CAV_fnc_SupplyCrate;```
+```
+[this,1] call CAV_fnc_SupplyCrate;```
 
 ##### CAV_fnc_VehCargo
 This function handle our veichles. The function gives spesific vecihle a spesific cargo and equipment. You can scale the ammount by changing the second parameter between `0 to 1` (You can go over 1 but its not recomended.)
 
 ###### Exsample
-```[this,1] call CAV_fnc_VehCargo;```
+```
+[this,1] call CAV_fnc_VehCargo;```
