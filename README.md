@@ -1,7 +1,17 @@
 ### This is the 7th Cavalry Operations Template.
+The script s pre installed and modular meaning they can be turned off by editing the `FUNCTIONS & SYSTEMS` section (_Line 37_) in the `description.ext`.
 
-To see what versions of scripts we are using look in the readme file in the `cScripts` folder.
-
+For manual installation of the script copy paste the section below to your `description.ext`.
+``` c++
+    #include "cScripts\ViewingDistance\GUI.h"
+    class CfgFunctions {
+        #include "cScripts\ViewingDistance\CfgFunctions.hpp"
+        #include "cScripts\Ammo\CfgFunctions.hpp"
+        #include "cScripts\Loadouts\GearUpScript\CfgFunctions.hpp"
+    };
+    #include "cScripts\Loadouts\gearLoad.hpp"
+```
+_To see what versions of scripts we are using look in the readme file in the `cScripts` folder._
 #### Automatic gear selection
 The mission template support a automatic loudout selection based on the unit `Side`, `Variable` or `Classname`.
 All the loudouts can be found in `cScripts\Loadouts` together with instructions on how it is used.
