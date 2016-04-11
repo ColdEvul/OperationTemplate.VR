@@ -7,8 +7,8 @@
     onLoadMission       = "7th Cavalry";
     onLoadIntro         = "S3 1BN Battle Staff Operation";
     
-    loadScreen          = "Data\MissionLogo.paa"
-    overviewPicture     = "Data\MissionLogo.paa"
+    loadScreen          = "Data\MissionLogo.paa";
+    overviewPicture     = "Data\MissionLogo.paa";
     
 /* ########    PARAMETERS   ######## */
 
