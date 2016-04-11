@@ -13,9 +13,8 @@ _crate addItemCargoGlobal [QUOTE(ACE_EarPlugs),(_quaScale * 100)];
 
 _crate addItemCargoGlobal [QUOTE(ACE_FieldDressing),(_quaScale * 250)];
 
-_crate addItemCargoGlobal [QUOTE(_MED_IV0),(_quaScale * 120)];
-_crate addItemCargoGlobal [QUOTE(_MED_IV1),(_quaScale * 120)];
-_crate addItemCargoGlobal [QUOTE(_MED_IV2),(_quaScale * 120)];
+_crate addItemCargoGlobal [QUOTE(ACE_bloodIV_500),(_quaScale * 120)];
+_crate addItemCargoGlobal [QUOTE(ACE_salineIV_500),(_quaScale * 120)];
 
 _crate addItemCargoGlobal [QUOTE(ACE_morphine),(_quaScale * 250)];
 _crate addItemCargoGlobal [QUOTE(ACE_epinephrine),(_quaScale * 250)];

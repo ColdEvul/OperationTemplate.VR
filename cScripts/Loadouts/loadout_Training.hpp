@@ -3,7 +3,7 @@ GearVersionDate: 160303
 */
 class C_CAD {       // "CAD"       | CADRE
     uniform         = "rhs_uniform_cu_ocp_1stcav";
-    vest            = V_Rangemaster_belt;
+    vest            = "V_Rangemaster_belt";
     headgear        = "H_MilCap_mcamo";
     goggles         = "";
     nvgoggles       = "";
@@ -39,7 +39,7 @@ class C_CAD_1 : C_CAD {}; class C_CAD_2 : C_CAD {}; class C_CAD_3 : C_CAD {}; cl
 // ====================================================================================
 class C_DI {        // "DI"        | DRILL INSTRUCTOR
     uniform         = "rhs_uniform_cu_ocp_1stcav";
-    vest            = V_BandollierB_rgr;
+    vest            = "V_BandollierB_rgr";
     headgear        = "H_Booniehat_mcamo";
     goggles         = "";
     nvgoggles       = "";
