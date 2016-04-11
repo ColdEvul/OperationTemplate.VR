@@ -1,4 +1,4 @@
-## I want a easy way
+# Arsenal
 Go to the virtual arsenal and make a loadout there to your liking. Then use the export function `CTRL`+`SHIFT`+`C` to export the loadout into the format that this script understands. Read the section called `Classes` below, because you still need to tell the script who should get the loadout you just made, but other than that, you're done.
 
 # Loadouts
