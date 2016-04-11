@@ -20,7 +20,7 @@ All the loudouts can be found in `cScripts\Loadouts` together with instructions 
 Here you find finctions and scripts used in the cScripts.
 
 ##### ReGear
-Sometimes you mess upp your gear or your back att base and whant to reset your inventory this addAction. It gives you a fresh lodout.
+Sometimes you mess up your gear or during training when back at base are in need of a fresh loadout. This addAction is your solution to that.
 ``` c++
 _this addAction ["<t color=""#ffcc33"">ReGear</t>","[] call A3G_Loadout_fnc_ApplyLoadout;"];
 ```
