@@ -1,11 +1,19 @@
-// Teleports a person to the marker "teleportDestination". You can place this marker anywhere on the map.
-// The marker can also be moved (see associated script: Teleport To Vehicle Location).
-//
-// To use: Add this script as an action on an item. EG:
-//
-// this addAction ["Teleport - Talon","[FOB_Talon] call CAV_fnc_Teleport"];
-// this addAction ["Teleport - Base","[Base] call CAV_fnc_Teleport"];
-// this addAction ["Teleport - Airfield","[Airstrip] call CAV_fnc_Teleport"];
+/*
+	Author: Anonymus prefected by A.Brostrom
+
+	Description:
+    this teleports you two a markers possition.
+        this addAction ["Teleport - Talon","[FOB_Talon] call CAV_fnc_Teleport"];
+        this addAction ["Teleport - Base","[Base] call CAV_fnc_Teleport"];
+        this addAction ["Teleport - Airfield","[Airstrip] call CAV_fnc_Teleport"];
+
+	Parameter(s):
+		0 (Optional):
+			STRING - markerName (default: "")
+
+	Returns:
+	BOOL
+*/
 
 params ["_dest"];
 
