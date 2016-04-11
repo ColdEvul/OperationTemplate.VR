@@ -8,7 +8,8 @@ All the names of the gear can be found in `cScripts\Loadouts` folder.
 
 
 #### Functions and systems
-Used functions
+Here you find finctions and scripts used in the cScripts.
+
 ##### ReGear
 Sometimes you mess upp your gear or your back att base and whant to reset your inventory this addAction. It gives you a fresh lodout.
 ``` c++
