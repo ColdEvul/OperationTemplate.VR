@@ -3,9 +3,8 @@
 To see what versions of scripts we are using look in the readme file in the `cScripts` folder.
 
 #### Automatic gear selection
-The mission template support a automatic gear selection based on the unit Variable Name.
-All the names of the gear can be found in `cScripts\Loadouts` folder.
-
+The mission template support a automatic loudout selection based on the unit `Side`, `Variable` or `Classname`.
+All the loudouts can be found in `cScripts\Loadouts` together with instructions on how it is used.
 
 #### Functions and systems
 Here you find finctions and scripts used in the cScripts.
