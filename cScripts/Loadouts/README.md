@@ -1,6 +1,3 @@
-# Arsenal
-Go to the virtual arsenal and make a loadout there to your liking. Then use the export function `CTRL`+`SHIFT`+`C` to export the loadout into the format that this script understands. Read the section called `Classes` below, because you still need to tell the script who should get the loadout you just made, but other than that, you're done.
-
 # Loadouts
 Loadouts are defined directly inside the `cScripts\Loadouts\gearLoad.hpp`. This has vast advantages over the commonly accepted method of scripting them on a per-unit basis. Loadouts are applied on mission start and when you respawn. It should work completely seamless in every situation. This is an example on how a loadout looks like with this system:
 
@@ -110,3 +107,6 @@ The loadout options are completely modular, just use what you need and nothing m
 ### Important
 - `linkedItems[]` is used in conjunction with the arsenal export and should be avoided if inputting a loadout manually.
 - `weapons[]` is used in conjunction with the arsenal export and should be avoided if inputting a loadout manually.
+
+# Arsenal
+Go to the virtual arsenal and make a loadout there to your liking. Then use the export function `CTRL`+`SHIFT`+`C` to export the loadout into the format that this script understands. Read the section called `Classes` below, because you still need to tell the script who should get the loadout you just made, but other than that, you're done.
