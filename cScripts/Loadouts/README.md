@@ -1,39 +1,10 @@
-# A3G Loadout
-> An **almost** okay loadout system
-
--Trusty Arabian
-
-> Splendid :^)
-
--Jay Crowe
-
-## Installation
-1. Create a folder in your mission root folder and name it `modules`. Then create one inside there and call it `a3g-loadout`. If you change the name you will have to adjust some folder paths.
-2. Download the contents of this repository ( there's a download link at the side ) and put it into the folder you just created.
-3. Make a `description.ext` file and put it into your mission root folder. If you don't know what a description.ext is, you can read about it [here](https://community.bistudio.com/wiki/Description.ext).
-4. It should look like this: <NEEDS NEW PICTURE>
-5. Add the following lines of code to the `description.ext`:
-
-``` c++ 
-class CfgFunctions { 
-  #include "modules\a3g-loadout\CfgFunctions.hpp" 
-};
-```
-
-That's it!
-
-## I'm too dumb, give me the easy way!
-Go to the virtual arsenal and make a loadout there to your liking. Then use the export function `CTRL`+`SHIFT`+`C` to export the loadout into the format that this script understands. Read the section called `Classes` below, because you still need to tell the script who should get the loadout you just made, but other than that, you're done.
-
 # Loadouts
-Loadouts are defined directly inside the `description.ext`. This has vast advantages over the commonly accepted method of scripting them on a per-unit basis. Loadouts are applied on mission start and when you respawn. It should work completely seamless in every situation. This is an example on how a loadout looks like with this system:
+Loadouts are defined directly inside the `cScripts\Loadouts\gearLoad.hpp`. This has vast advantages over the commonly accepted method of scripting them on a per-unit basis. Loadouts are applied on mission start and when you respawn. It should work completely seamless in every situation. This is an example on how a loadout looks like with this system:
 
 ``` c++
-class CfgLoadouts {
-  class My_Unit {
+class My_Unit {
     primaryWeapon = "RH_m4a1_ris";
     primaryWeaponAttachments[] = {"RH_ta31rco"};
-  };
 };
 ```
 
@@ -136,3 +107,6 @@ The loadout options are completely modular, just use what you need and nothing m
 ### Important
 - `linkedItems[]` is used in conjunction with the arsenal export and should be avoided if inputting a loadout manually.
 - `weapons[]` is used in conjunction with the arsenal export and should be avoided if inputting a loadout manually.
+
+# Arsenal
+Go to the virtual arsenal and make a loadout there to your liking. Then use the export function `CTRL`+`SHIFT`+`C` to export the loadout into the format that this script understands. Read the section called `Classes` below, because you still need to tell the script who should get the loadout you just made, but other than that, you're done.
