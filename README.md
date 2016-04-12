@@ -1,4 +1,4 @@
-## 7th Cavalry Operations Template.
+## 7th Cavalry Operations Template
 
 ### Get started
 The script s pre installed and modular meaning they can be turned off by editing the `FUNCTIONS & SYSTEMS` section (_Line 37_) in the `description.ext`.
