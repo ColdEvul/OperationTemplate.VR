@@ -45,8 +45,12 @@ All the loudouts can be found in `cScripts\Loadouts` together with instructions 
 | Common      | OFFICER                         | `C_OFF`        |
 | Common      | JTAC                            | `C_JTAC`       |
 | Common      | FORWARD OBSERVER                | `C_FO`         |
-
-
+|             |                                 |                |
+| Crew        | TANK COMMANDER                  | `C_TC`         |
+| Crew        | CREWMAN                         | `C_C`          |
+| Crew        | HELICOPTER PILOT                | `C_P`          |
+| Crew        | HELICOPTER CREW                 | `C_PC`         |
+| Crew        | PILOT                           | `C_PG`         |
 
 #### Functions and systems
 Here you find finctions and scripts used in the cScripts.
