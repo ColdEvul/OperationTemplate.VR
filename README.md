@@ -26,22 +26,22 @@ All the loudouts can be found in `cScripts\Loadouts` together with instructions 
 | Common      | GRENADIER                       | `C_G`          |
 | Common      | AUTOMATIC RIFLEMAN LIGHT        | `C_ARL`        |
 | Common      | AUTOMATIC RIFLEMAN MEDIUM       | `C_ARM`        |
-
+|             |                                 |                |
 | Common      | ANTI-TANK JAV                   | `C_AT`         |
 | Common      | ANTI-TANK MAAWS                 | `C_ATM`        |
 | Common      | LIGHT ANTI-TANK                 | `C_ATL`        |
 | Common      | ANTI-AIR                        | `C_AA`         |
-
+|             |                                 |                |
 | Common      | COMBAT LIFESAVER                | `C_M`          |
 | Common      | FLIGHT MEDIC or PLATOON MEDIC   | `C_FM`         |
 | Common      | MEDICAL TEAM LEADER             | `C_MTL`        |
-
+|             |                                 |                |
 | Common      | MORTAR GUNNER                   | `C_MOG`        |
 | Common      | MORTAR ASST.                    | `C_MOA`        |
-
+|             |                                 |                |
 | Common      | ENGINEER SL                     | `C_ENGSL`      |
 | Common      | ENGINEER                        | `C_ENG`        |
-
+|             |                                 |                |
 | Common      | OFFICER                         | `C_OFF`        |
 | Common      | JTAC                            | `C_JTAC`       |
 | Common      | FORWARD OBSERVER                | `C_FO`         |
