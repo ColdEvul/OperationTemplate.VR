@@ -18,7 +18,7 @@ _To see what versions of scripts we are using look in the readme file in the `cS
 The mission template support a automatic loudout selection based on the unit `Side`, `Variable` or `Classname`.
 All the loudouts can be found in `cScripts\Loadouts` together with instructions on how it is used.
 
-| Loudout     | Unit                            | variableName   |
+| Loadouts    | Unit                            | variableName   |
 | ------------|---------------------------------|----------------|
 | Common      | SQUAD LEADER                    | `C_SL`         |
 | Common      | FIRE TEAM LEADER                | `C_FTL`        |
