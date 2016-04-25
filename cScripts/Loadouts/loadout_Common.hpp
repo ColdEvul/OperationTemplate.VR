@@ -1,5 +1,5 @@
 /*
-GearVersionDate: 160413
+GearVersionDate: 160426
 */
 
 class C_SL {            // SQUAD LEADER
@@ -97,13 +97,13 @@ class C_FTL {           // FIRE TEAM LEADER
         
         //_QUA1(_ITEM_RADIO1),
         //_QUA1(_ITEM_RADIOADD),
-        
+    
         _QUA1(ACE_EarPlugs),
         _QUA1(ACE_Flashlight_MX991),
         _QUA1(ACE_microDAGR),
         _QUA1(ACE_MapTools),
         _QUA1(ACE_IR_Strobe_Item),
-        _QUA2(_GRENADE)							
+        _QUA2(_GRENADE)
     };
     addItemsToVest[] = {
         _QUA4(_MAG_PRIMARY),
@@ -172,7 +172,7 @@ class C_R {             // RIFLEMAN
         _QUA1(ACE_DAGR),
         _QUA1(ACE_MapTools),
         _QUA1(ACE_IR_Strobe_Item),
-        _QUA2(_GRENADE)							
+        _QUA2(_GRENADE)
     };
     addItemsToVest[] = {
         _QUA4(_MAG_PRIMARY),

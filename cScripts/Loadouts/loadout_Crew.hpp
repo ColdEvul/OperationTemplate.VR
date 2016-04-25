@@ -1,5 +1,5 @@
 /*
-GearVersionDate: 160413
+GearVersionDate: 160425
 */
 
 class C_TC {        // TANK COMMANDER
@@ -8,7 +8,7 @@ class C_TC {        // TANK COMMANDER
     headgear        = "H_HelmetCrew_I";
     goggles         = "rhs_ess_black";
     nvgoggles       = "rhsusf_ANPVS_15";
-    backpack        = "rhsusf_assault_eagleaiii_ocp";
+    backpack        = _GEAR_BACKPACK_RADIO1;
     
     primaryWeapon   = _WEAPON_PRIMARY_GL0;
     primaryWeaponAttachments[] = {
@@ -21,39 +21,33 @@ class C_TC {        // TANK COMMANDER
     items[] = {};
     magazines[] = {};
     addItemsToUniform[] = {
-        _QUA10(ACE_packingBandage),
-        _QUA2(ACE_morphine),
-        _QUA2(ACE_epinephrine),
-        _QUA1(ACE_tourniquet),
-        
-        _QUA2(ACE_CableTie),
-        
-        //_QUA1(_ITEM_RADIO1),
-        //_QUA1(_ITEM_RADIOADD),
-        
         _QUA1(ACE_EarPlugs),
-        _QUA1(ACE_Flashlight_MX991),
-        _QUA1(ACE_microDAGR),
         _QUA1(ACE_MapTools),
+        _QUA1(ACE_CableTie),
         _QUA1(ACE_IR_Strobe_Item),
-        _QUA2(_GRENADE)							
+        _QUA1(ACE_Flashlight_MX991),
+        _QUA2(Chemlight_Green),
+        _QUA2(Chemlight_Red),
+        _QUA2(_MAG_SECONDARY0)    
     };
     addItemsToVest[] = {
-        _QUA4(_MAG_PRIMARY),
-        _QUA2(_GRENADE),	
-        _QUA4(_GRENADE_SMOKE),
-        _QUA4(_GLSHELL0),	
-        _QUA4(_GLSHELL1),	
-        _QUA4(_GLSHELLSMOKE)			
+        _QUA1(_GRENADE_SMOKE_GREEN),
+        _QUA1(_GLSHELLSMOKE),
+        _QUA1(_GLSHELLSMOKEGREEN),
+        _QUA1(_GLSHELLSMOKERED),
+        _QUA1(_GLFLARE_GREEN),
+        _QUA1(_GLFLARE_RED),
+        _QUA2(_GRENADE),
+        _QUA2(_GRENADE_SMOKE),
+        _QUA1(_GRENADE_SMOKE_BLUE),
+        _QUA1(_GRENADE_SMOKE_YELLOW),
+        _QUA6(_MAG_PRIMARY)
     };
     addItemsToBackpack[] = {
-        _QUA2(_GRENADE),	
-        _QUA4(_GRENADE_SMOKE),	
-        _QUA2(_GLSHELLSMOKEGREEN),	
-        _QUA2(_GLSHELLSMOKEYELLOW),	
-        _QUA2(Chemlight_Blue),
-        _QUA2(Chemlight_Red),	
-        _QUA1(Toolkit)						
+        _QUA5(ACE_packingBandage),
+        _QUA1(ACE_morphine),
+        _QUA1(ACE_epinephrine),
+        _QUA1(ACE_microDAGR)
     };
     
     binoculars      = "ACE_Vector";
@@ -83,45 +77,134 @@ class C_C {         // CREWMAN
     items[] = {};
     magazines[] = {};
     addItemsToUniform[] = {
-        _QUA10(ACE_packingBandage),
-        _QUA2(ACE_morphine),
-        _QUA2(ACE_epinephrine),
-        _QUA1(ACE_tourniquet),
-        
-        _QUA2(ACE_CableTie),
-        
-        //_QUA1(_ITEM_RADIO1),
-        //_QUA1(_ITEM_RADIOADD),
-        
         _QUA1(ACE_EarPlugs),
-        _QUA1(ACE_Flashlight_MX991),
-        _QUA1(ACE_DAGR),
         _QUA1(ACE_MapTools),
+        _QUA1(ACE_CableTie),
         _QUA1(ACE_IR_Strobe_Item),
-        _QUA2(_GRENADE)							
+        _QUA1(ACE_Flashlight_MX991),
+        _QUA2(Chemlight_Green),
+        _QUA2(Chemlight_Red),
+        _QUA2(_MAG_SECONDARY0)
     };
     addItemsToVest[] = {
-        _QUA4(_MAG_PRIMARY),
-        _QUA2(_GRENADE),	
-        _QUA4(_GRENADE_SMOKE)							
+        _QUA1(_GRENADE_SMOKE_GREEN),
+        _QUA2(_GRENADE),
+        _QUA2(_GRENADE_SMOKE),
+        _QUA1(_GRENADE_SMOKE_BLUE),
+        _QUA1(_GRENADE_SMOKE_YELLOW),
+        _QUA3(_MAG_PRIMARY)								
     };
     addItemsToBackpack[] = {
-        _QUA2(_GRENADE),	
-        _QUA4(_GRENADE_SMOKE),	
-        _QUA4(_GRENADE_SMOKE_GREEN),	
-        _QUA4(_GRENADE_SMOKE_YELLOW),	
-        _QUA2(Chemlight_Blue),
-        _QUA2(Chemlight_Red),
-        _QUA1(Toolkit)						
+        _QUA5(ACE_packingBandage),
+        _QUA1(ACE_morphine),
+        _QUA1(ACE_epinephrine),
+        _QUA1(Toolkit)
     };
     
-    binoculars      = "Binocular";
+    binoculars      = "ACE_Vector";
     map             = "ItemMap";
     gps             = "ItemAndroid";
     compass         = "ItemCompass";
     watch           = "tf_microdagr";
 };
 class C_C_1 : C_C {}; class C_C_2 : C_C {}; class C_C_3 : C_C {}; class C_C_4 : C_C {}; class C_C_5 : C_C {}; class C_C_6 : C_C {}; class C_C_7 : C_C {}; class C_C_8 : C_C {}; class C_C_9 : C_C {}; class C_C_10 : C_C {}; class C_C_11 : C_C {}; class C_C_12 : C_C {}; class C_C_13 : C_C {}; class C_C_14 : C_C {}; class C_C_15 : C_C {}; class C_C_16 : C_C {}; class C_C_17 : C_C {}; class C_C_18 : C_C {}; class C_C_19 : C_C {}; class C_C_20 : C_C {}; class C_C_21 : C_C {}; class C_C_22 : C_C {}; class C_C_23 : C_C {}; class C_C_24 : C_C {}; class C_C_25 : C_C {}; class C_C_26 : C_C {}; class C_C_27 : C_C {}; class C_C_28 : C_C {}; class C_C_29 : C_C {}; class C_C_30 : C_C {}; class C_C_31 : C_C {}; class C_C_32 : C_C {}; class C_C_33 : C_C {}; class C_C_34 : C_C {}; class C_C_35 : C_C {}; class C_C_36 : C_C {}; class C_C_37 : C_C {}; class C_C_38 : C_C {}; class C_C_39 : C_C {}; class C_C_40 : C_C {}; class C_C_41 : C_C {}; class C_C_42 : C_C {}; class C_C_43 : C_C {}; class C_C_44 : C_C {}; class C_C_45 : C_C {}; class C_C_46 : C_C {}; class C_C_47 : C_C {}; class C_C_48 : C_C {}; class C_C_49 : C_C {}; class C_C_50 : C_C {};
+
+class C_TG {        // TANK GUNNER / CLS
+    uniform         = "rhs_uniform_cu_ocp_1stcav";
+    vest            = "rhsusf_iotv_ocp_Rifleman";
+    headgear        = "H_HelmetCrew_I";
+    goggles         = "rhs_ess_black";
+    nvgoggles       = "rhsusf_ANPVS_15";
+    backpack        = "rhsusf_assault_eagleaiii_ocp";
+    
+    primaryWeapon   = _WEAPON_PRIMARY0;
+    primaryWeaponAttachments[] = {
+        _WEAPON_ATTACHMENT0
+    };
+    
+    secondaryWeapon = "";
+    handgunWeapon = "";
+    
+    items[] = {};
+    magazines[] = {};
+    addItemsToUniform[] = {
+        _QUA1(ACE_EarPlugs),
+        _QUA1(ACE_MapTools),
+        _QUA1(ACE_CableTie),
+        _QUA1(ACE_IR_Strobe_Item),
+        _QUA1(ACE_Flashlight_MX991),
+        _QUA2(Chemlight_Green),
+        _QUA2(Chemlight_Red),
+        _QUA2(_MAG_SECONDARY0)
+    };
+    addItemsToVest[] = {
+        _QUA1(_GRENADE_SMOKE_GREEN),
+        _QUA2(_GRENADE),
+        _QUA2(_GRENADE_SMOKE),
+        _QUA1(_GRENADE_SMOKE_BLUE),
+        _QUA1(_GRENADE_SMOKE_YELLOW),
+        _QUA3(_MAG_PRIMARY)
+    };
+    addItemsToBackpack[] = {
+        _QUA5(ACE_packingBandage),
+        _QUA1(ACE_morphine),
+        _QUA1(ACE_epinephrine),
+        _QUA1(Toolkit)
+    };
+    
+    binoculars      = "ACE_Vector";
+    map             = "ItemMap";
+    gps             = "ItemAndroid";
+    compass         = "ItemCompass";
+    watch           = "tf_microdagr";
+};
+class C_TG_1 : C_TG {}; class C_TG_2 : C_TG {}; class C_TG_3 : C_TG {}; class C_TG_4 : C_TG {}; class C_TG_5 : C_TG {}; class C_TG_6 : C_TG {}; class C_TG_7 : C_TG {}; class C_TG_8 : C_TG {}; class C_TG_9 : C_TG {}; class C_TG_10 : C_TG {}; class C_TG_11 : C_TG {}; class C_TG_12 : C_TG {}; class C_TG_13 : C_TG {}; class C_TG_14 : C_TG {}; class C_TG_15 : C_TG {}; class C_TG_16 : C_TG {}; class C_TG_17 : C_TG {}; class C_TG_18 : C_TG {}; class C_TG_19 : C_TG {}; class C_TG_20 : C_TG {}; class C_TG_21 : C_TG {}; class C_TG_22 : C_TG {}; class C_TG_23 : C_TG {}; class C_TG_24 : C_TG {}; class C_TG_25 : C_TG {}; class C_TG_26 : C_TG {}; class C_TG_27 : C_TG {}; class C_TG_28 : C_TG {}; class C_TG_29 : C_TG {}; class C_TG_30 : C_TG {}; class C_TG_31 : C_TG {}; class C_TG_32 : C_TG {}; class C_TG_33 : C_TG {}; class C_TG_34 : C_TG {}; class C_TG_35 : C_TG {}; class C_TG_36 : C_TG {}; class C_TG_37 : C_TG {}; class C_TG_38 : C_TG {}; class C_TG_39 : C_TG {}; class C_TG_40 : C_TG {}; class C_TG_41 : C_TG {}; class C_TG_42 : C_TG {}; class C_TG_43 : C_TG {}; class C_TG_44 : C_TG {}; class C_TG_45 : C_TG {}; class C_TG_46 : C_TG {}; class C_TG_47 : C_TG {}; class C_TG_48 : C_TG {}; class C_TG_49 : C_TG {}; class C_TG_50 : C_TG {};
+
+class C_TL {        // TANK LOADER
+    uniform         = "rhs_uniform_cu_ocp_1stcav";
+    vest            = "rhsusf_iotv_ocp_Rifleman";
+    headgear        = "H_HelmetCrew_I";
+    goggles         = "rhs_ess_black";
+    nvgoggles       = "rhsusf_ANPVS_15";
+    backpack        = _GEAR_BACKPACK_RADIO1;
+    
+    primaryWeapon   = _WEAPON_PRIMARY_AR1;
+    primaryWeaponAttachments[] = {
+    };
+    
+    secondaryWeapon = "";
+    handgunWeapon = "";
+    
+    items[] = {};
+    magazines[] = {};
+    addItemsToUniform[] = {	
+    _QUA1(_ITEM_EARPLUGS),
+    _QUA1(_ITEM_MAPTOOL),
+    _QUA1(_ITEM_CABLETIE),
+    _QUA1(_ITEM_STROBE),
+    _QUA1(_ITEM_FLASHLIGHT),
+    _QUA2(_CHEMLIGHT_GREEN),
+    _QUA2(_CHEMLIGHT_RED),
+    _QUA2(_MAG_SECONDARY0)	  
+    };
+    addItemsToVest[] = {	
+    _QUA1(_GRENADE_SMOKE_GREEN),
+    _QUA2(_GRENADE),
+    _QUA2(_GRENADE_SMOKE),
+    _QUA1(_GRENADE_SMOKE_BLUE),
+    _QUA1(_GRENADE_SMOKE_YELLOW),
+    _QUA1(_MAG_AR1)	
+    };
+    addItemsToBackpack[] = {	
+    };
+    
+    binoculars      = "ACE_Vector";
+    map             = "ItemMap";
+    gps             = "ItemAndroid";
+    compass         = "ItemCompass";
+    watch           = "tf_microdagr";
+};
+class C_TL_1 : C_TL {}; class C_TL_2 : C_TL {}; class C_TL_3 : C_TL {}; class C_TL_4 : C_TL {}; class C_TL_5 : C_TL {}; class C_TL_6 : C_TL {}; class C_TL_7 : C_TL {}; class C_TL_8 : C_TL {}; class C_TL_9 : C_TL {}; class C_TL_10 : C_TL {}; class C_TL_11 : C_TL {}; class C_TL_12 : C_TL {}; class C_TL_13 : C_TL {}; class C_TL_14 : C_TL {}; class C_TL_15 : C_TL {}; class C_TL_16 : C_TL {}; class C_TL_17 : C_TL {}; class C_TL_18 : C_TL {}; class C_TL_19 : C_TL {}; class C_TL_20 : C_TL {}; class C_TL_21 : C_TL {}; class C_TL_22 : C_TL {}; class C_TL_23 : C_TL {}; class C_TL_24 : C_TL {}; class C_TL_25 : C_TL {}; class C_TL_26 : C_TL {}; class C_TL_27 : C_TL {}; class C_TL_28 : C_TL {}; class C_TL_29 : C_TL {}; class C_TL_30 : C_TL {}; class C_TL_31 : C_TL {}; class C_TL_32 : C_TL {}; class C_TL_33 : C_TL {}; class C_TL_34 : C_TL {}; class C_TL_35 : C_TL {}; class C_TL_36 : C_TL {}; class C_TL_37 : C_TL {}; class C_TL_38 : C_TL {}; class C_TL_39 : C_TL {}; class C_TL_40 : C_TL {}; class C_TL_41 : C_TL {}; class C_TL_42 : C_TL {}; class C_TL_43 : C_TL {}; class C_TL_44 : C_TL {}; class C_TL_45 : C_TL {}; class C_TL_46 : C_TL {}; class C_TL_47 : C_TL {}; class C_TL_48 : C_TL {}; class C_TL_49 : C_TL {}; class C_TL_50 : C_TL {};
 
 class C_P {         // HELICOPTER PILOT
     uniform         = "rhs_uniform_cu_ocp_1stcav";
